@@ -1,0 +1,262 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  font-size: 20px;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.nav-link{
+  transition: 0.7s ease;
+}
+.nav-link:hover{
+  color: dodgerblue;
+}
+.aboutMe {
+  background-color: #ef744b;
+  border-radius: 20px;
+  font-weight: bold;
+  height: 55px;
+  margin-top: 20px;
+  padding-top: 5px;
+  text-align: center;
+  width: 200px;
+}
+.aboutMe > p{
+    line-height: 1.8;
+    padding-bottom: 17px;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+hr{
+  margin-bottom: 20px;
+}
+p {
+  line-height: 1.8;
+  padding-bottom: 17px;
+}
+button{
+
+  border-radius: 10px;
+  font-size: 20px;
+  height: 55px;
+  margin-top: 20px;
+  padding-top: 5px;
+  text-align: center;
+  width: 100px;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.hero{
+  background-color: #262626;
+}
+li{
+  list-style: none;
+}
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: #262626;  
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+  margin-top: 25px;;
+    font-size: 27px;
+    font-weight: bold;
+}
+h4{
+margin-top: 25px;
+font-size: 27px;
+}
+
+
+.about-section {
+  min-height: 100vh;
+  background-image: url('../images/abstract-blue-background.jpg');
+  background-size: cover;
+}
+.about {
+  padding: 30px;
+  color: rgb(231, 231, 231);
+}
+.hero {
+  min-height: 100vh;
+  background-color: #0b0d21;
+}
+.hero-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.hero-text {
+  margin-left: 40px;
+  color: rgb(231, 231, 231);
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+}
+.learning{
+  background-color: #024883;
+  color: white;
+  padding: 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.contact {
+  height: 100vh;
+  margin: auto;
+  background-color: rgb(32, 32, 110);
+  color: white;
+  justify-content: space-around;
+  padding: 80px;
+}
+.social {
+  margin: 15px;
+  text-decoration: none;
+}
+.never{
+  font-family: 'Brush Script MT', cursive;
+  color: dodgerblue;
+  align-items: center;
+  font-size: 28px;
+}
+.form-frame {
+  max-width: 960px;
+  margin: auto;
+  font-size: 25px;
+}
+input, textarea {
+  height: 100%;
+  width: 100%;
+ padding: 10px;
+ font-size: 25px;
+}
+
+footer {
+  color: white;
+  padding: 40px;
+  text-align: center;
+  background-color: #1c1d25;
+}
+
+.portfolio {
+  min-height: 100vh;
+  margin: 30px;
+}
+.project-card {
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 20px rgb(195, 195, 234);
+  background-color: white;
+  color: #262626;
+}
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  min-height: 100vh;
+  text-align: center;
+  
+
+}
+.project-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #024883;
+  padding: 30px;
+  color: white;
+  
+}
+.project-card img{
+    max-width:260px;
+    max-height: 470px;
+}
+
+
+/* =================MEDIA=================== */
+
+@media only screen and (max-width: 600px) {
+  .hamburger{
+    display: block;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0px;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.nav-item{
+    margin: 16px 0;
+}
+.nav-menu.active{
+    left: 0px;
+}
+
+  .logo {
+    display: none;
+  }
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  button {
+    width: 100%;
+    margin-top: 0;
+  
+}
+}
