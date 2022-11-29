@@ -139,7 +139,7 @@ nav {
   justify-content: space-between;
 }
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
   background-color: rgb(32, 32, 110);
   color: white;
